@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        ul,li{
+            list-style-type: none;
+            display: inline;
+        }
+        a{
+            text-decoration: none;
+        }
+        .parent {
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(5);
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div6 { grid-area: 1 / 2 / 2 / 3; }
+.div8 { grid-area: 1 / 3 / 2 / 4; }
+
+ul.dashed{
+    list-style-type: none;
+}
+ul.dashed>li{
+    display: block;
+}
+ul.dashed>li:before{
+    content: "-";
+}
+.cards {
+      display: flex;
+      gap: 20px;
+    }
+    .card {
+      border: 1px solid #000;
+      border-radius: 15px;
+      padding: 15px;
+      width: 200px;
+    }
+    .quote {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .author {
+      color: gray;
+      font-size: 14px;
+    }
+    </style>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">&#128307;Reza Valizadeh</a></li>
+                <li style="float: right;"><a href="#">Contact</a></li>
+                <span style="display: inline;float: right;">/</span>
+                <li style="float: right;"><a href="#">Articles</a></li>
+                <span style="display: inline;float: right;">/</span>
+                <li style="float: right;"><a href="#">Projects</a></li>
+                <span style="display: inline;float: right;">/</span>
+                <li style="float: right;"><a href="#">Home</a></li>
+            </ul>
+        </nav>
+        <h1 style="text-align: center;">Frontend Developer</h1>
+    </header>
+    <main>
+        <div class="parent">
+            <div class="div1">
+                <h3>Projects</h3><a href="#">HTML Only Portfolio</a>
+                <a href="#">Calculator</a>
+            <a style="display: block;" href="#">Quiz App</a>
+            <a style="display: block;" href="#">Countdown Timer</a>
+            <a style="display: block;" href="#">Product Upcoming Page</a>
+            </div>
+            <div class="div6"><h3>Work Experience</h3><p>roadmap.sh</p><span>Solved all the frontend projects</span><p><a href="#">Visit my Profile</a></p><h4>OpenSource Work</h4><span>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.</span><p><a href="#">Visit my GitHub Profile</a></p></div>
+            
+            <div class="div8"><h3>Education</h3><span>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</span>
+            <br><br>
+            <span>Courses I took:</span>
+            <br>
+            <ul class="dashed">
+                <li>Object Oriented Programming</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Web Engineering</li>
+                <li>Artificial Intelligence</li>
+                <li>Human Computer Interaction</li>
+                <li>Computer Graphics</li>
+                <li>Database Management Systems</li>
+                <li>Distributed Database Systems</li>
+                <li>Discreet Mathematics</li>
+            </ul>
+            </div>
+            </div> 
+            <h2>Reviews from my Teachers</h2>
+            <div class="cards">
+                <div class="card">
+                  <div class="quote">John doe was a brilliant student; always stood out with his assignments.</div>
+                  <div class="author">Jane Doe<br>Assistant Professor</div>
+                </div>
+            
+                <div class="card">
+                  <div class="quote">John doe was a brilliant student; always stood out with his assignments.</div>
+                  <div class="author">Jane Doe<br>Assistant Professor</div>
+                </div>
+            
+                <div class="card">
+                  <div class="quote">John doe was a brilliant student; always stood out with his assignments.</div>
+                  <div class="author">Jane Doe<br>Assistant Professor</div>
+                </div>
+              </div>
+    </main>
+    <footer>
+        <h2 style="text-align: center;">&copy; all rights reserved 2025</h2>
+    </footer>
+</body>
+</html>
